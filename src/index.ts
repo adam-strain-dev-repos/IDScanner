@@ -75,6 +75,6 @@ function checkArrayForPatterns(arrayToCheck: string[],patterns: RegExp[]): strin
     return outputStrings;
 }
 
-module.exports.returnTestData = function(): IDData{
+module.exports.returnTestData = (): IDData => {
     return ParseInputString(passportExample);
 }
