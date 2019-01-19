@@ -1,0 +1,48 @@
+{
+  "name": "idscanner",
+  "version": "1.0.0",
+  "description": "Read Passport and ID Swiped as Taken From OCR Swipe Readers using the Machine Readable Zone of Passports and IDs.",
+  "main": "lib/index.js",
+  "types": "lib/index.t.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adam-strain-dev-repos/IDScanner.git"
+  },
+  "keywords": [
+    "Passport",
+    "ID",
+    "Swipe",
+    "Scan",
+    "Read",
+    "OCR",
+    "MRZ",
+    "Parse"
+  ],
+  "author": "Adam Strain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adam-strain-dev-repos/IDScanner/issues"
+  },
+  "homepage": "https://github.com/adam-strain-dev-repos/IDScanner#readme",
+  "devDependencies": {
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.18"
+  },
+  "files": ["lib/**/*"]
+}
