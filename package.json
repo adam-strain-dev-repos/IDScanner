@@ -1,6 +1,6 @@
 {
   "name": "idscanner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Read Passport and ID Swiped as Taken From OCR Swipe Readers using the Machine Readable Zone of Passports and IDs.",
   "main": "lib/index.js",
   "types": "lib/index.t.ts",
