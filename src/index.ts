@@ -19,9 +19,9 @@ class IDData {
   public type: string;
 }
 
-module.exports.getIDData = (inputString: string): IDData =>{
-    return ParseInputString(inputString);
-}
+module.exports.getIDData = (inputString: string): IDData => {
+  return ParseInputString(inputString);
+};
 
 // WILL TAKE INPUT STRING AS OUTPUT BY READER AND RETURN IDDATA OBJECT
 function ParseInputString(inputString: string): IDData {
