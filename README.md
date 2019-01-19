@@ -6,7 +6,7 @@ Designed for the use of Hotel/Youth Hostel/Accommodation providers. Will take th
 ##Usage
 Include the idreader package like so `var idscanner = require("idscanner");`.
 
-*idreader* has one functional method **ParseInputString** which takes the string as read from the passport/id swipe machine.
+*idreader* has one functional method **getIDData** which takes the string as read from the passport/id swipe machine.
 
 *idreader* has one example method **returnTestData**.
 
@@ -14,9 +14,9 @@ Include the idreader package like so `var idscanner = require("idscanner");`.
 ```
 var idscanner = require("idscanner");
 
-//ONCE YOU HAVE COLLECTED YOUR SWIPE FROM THE PASSPORT/ID SWIPE READER INSERT IT AS THE PARAMETER TO ParseInputString
+//ONCE YOU HAVE COLLECTED YOUR SWIPE FROM THE PASSPORT/ID SWIPE READER INSERT IT AS THE PARAMETER TO getIDData
 
-var parsedData = ParseInputString("START\nOCR LINE 1: P<RUSMALBORSKYI<<KOVBOJ<<<<<<<<<<<<<<<<<<<<<\nOCR LINE 2: 7553279419RUS8712242M2104131<<<<<<<<<<<<<<02\nOCR LINE 3:\nMSR LINE 1:\nMSR LINE 2:\nMSR LINE 3:\nEND");
+var parsedData = getIDData("START\nOCR LINE 1: P<RUSMALBORSKYI<<KOVBOJ<<<<<<<<<<<<<<<<<<<<<\nOCR LINE 2: 7553279419RUS8712242M2104131<<<<<<<<<<<<<<02\nOCR LINE 3:\nMSR LINE 1:\nMSR LINE 2:\nMSR LINE 3:\nEND");
 
 //TO GET AN EXAMPLE RESULT OBJECT OUT CALL returnTestData
 var exampleParsedData = returnTestData();
