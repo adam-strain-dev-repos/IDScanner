@@ -1,6 +1,6 @@
 {
   "name": "idscanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read Passport and ID Swiped as Taken From OCR Swipe Readers using the Machine Readable Zone of Passports and IDs.",
   "main": "lib/index.js",
   "types": "lib/index.t.ts",
@@ -11,9 +11,9 @@
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -44,5 +44,7 @@
   "dependencies": {
     "@types/node": "^10.12.18"
   },
-  "files": ["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ]
 }
